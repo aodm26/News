@@ -69,3 +69,8 @@ This project uses a fast heuristic classifier instead of a large language model 
 This app can optionally use a lightweight Hugging Face transformer fallback for low-confidence headlines. It uses `cardiffnlp/twitter-roberta-base-sentiment-latest`, which is much smaller and easier to deploy than a large generative model while still improving some ambiguous classifications [web:67].
 
 To enable it locally, install the extra dependencies from `requirements.txt` and tick **Enable lightweight LLM fallback** in the sidebar.
+## run with token
+export HF_TOKEN="hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+streamlit run app/rss_sentiment_dashboard.py
+
+
